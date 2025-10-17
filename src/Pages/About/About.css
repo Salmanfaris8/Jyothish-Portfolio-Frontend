@@ -1,0 +1,237 @@
+.main-about{
+  width: 100%;
+  background-color: black;
+  background-image: url(/src/assets/mesh-about.png);
+  background-size: 100% 150vh;
+  background-repeat: no-repeat;
+}
+
+.about-div{
+  padding: 200px 0px;
+}
+
+.about-h1{
+  font-size: 60px;
+  color: white;
+  width: 750px;
+  margin-left: 350px;
+}
+
+.bio-h2{
+  font-size: 30px;
+  color: white;
+}
+
+.bio-p{
+  width: 750px;
+  color: white;
+  line-height: 170%;
+  font-size: 20px;
+  margin-left: 60px;
+  margin-right: 180px;
+}
+
+.bio-span{
+  color: white;
+  font-size: 20px;
+  line-height: 170%;
+}
+
+.skill-div{
+  margin-right: 130px;
+}
+
+.edu-p{
+  color: white;
+  font-size: 20px;
+  line-height: 170%;
+}
+
+.edu-div{
+  margin-left: 410px;
+}
+
+.edu-cour{
+    width: 75%;
+}
+
+.edu-colldiv{
+  margin-right: 190px;
+}
+
+.edu-coll{
+  margin-left: 185px;
+}
+
+.resume {
+  position: relative;
+  height: 50px;
+  width: 200px;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50px;  
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.resume::before {
+  content: "";
+  position: absolute;
+  bottom: 0;              
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: #fff;
+  border-radius: 100% 100% 0 0;
+  transform: translateX(-50%);
+  transition: width 0.6s ease, height 0.6s ease, border-radius 0.6s ease;
+  z-index: -1;
+}
+
+.resume:hover::before {
+  width: 200px;  
+  height: 50px; 
+  border-radius: 50px;  
+}
+
+.resume:hover {
+  color: #000;
+}
+
+
+@media (max-width: 1000px){
+
+  .main-about{
+    background-size: 100% 60vh;
+  }
+
+  .about-div{
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-h1{
+    font-size: 40px;
+    width: 500px;
+    margin-left: -10px;
+  }
+
+  .bio-h2{
+    font-size: 20px;
+  }
+
+  .bio-p{
+    width: 550px;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 10px;
+  }
+
+  .skill-div1{
+    width: 100%;
+    margin-left: 200px;
+  }
+
+  .skill-div2{
+    width: 100%;
+    margin-left: 140px;
+    margin-top: 40px;
+  }
+
+  .edu-p{
+    font-size: 20px;
+    line-height: 170%;
+  }
+
+  .edu-div{
+    margin-left: 165px;
+  }
+
+  .edu-cour{
+    width: 75%;
+  }
+
+  .edu-colldiv{
+    margin-right: 50px;
+  }
+
+  .edu-coll{
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+
+  .edu-p1{
+    margin-left: -280px;
+    margin-top: 20px;
+  }
+
+}
+
+@media (max-width: 480px){
+
+  .about-div{
+    padding: 50px 0px;
+  }
+
+  .about-h1{
+    font-size: 30px;
+    width: 100%;
+    margin-left: 0px;
+    padding: 10px;
+  }
+
+  .bio-p{
+    width: 100%;
+    line-height: 150%;
+    font-size: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 20px;
+  }
+
+  .skill-div{
+    width: 100%;
+  }
+
+  .skill-div1{
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .skill-div2{
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+
+  .edu-div{
+    margin-left: 0px;
+  }
+
+  .edu-colldiv{
+    margin-right: 0px;
+  }
+
+  .edu-cour{
+    width: 100%;
+    padding: 25px;
+  }
+
+  .edu-coll{
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 25px;
+  }
+
+  .edu-p1{
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+}

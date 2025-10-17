@@ -1,0 +1,45 @@
+.main-works{
+  width: 100%;
+  background-color: black;
+  background-image: url(../../assets/mesh-works.png);
+  background-size: 100% 150vh;
+  background-repeat: no-repeat;
+}
+
+.works-h1{
+  font-size: 200px;
+  color: white;
+  text-align: center;
+  padding: 200px 0px;
+  letter-spacing: 5px;
+}
+
+.all-works{
+  background-color: rgba(0, 0, 0, 30%);
+}
+
+@media (max-width: 1000px){
+
+  .works-h1{
+    font-size: 100px;
+    padding: 150px 0px;
+    letter-spacing: 5px;
+    text-align: center;
+    width: 100%;
+  }
+
+}
+
+@media (max-width:480px) {
+  
+  .works-h1{
+    font-size: 60px;
+    padding: 100px 0px;
+    letter-spacing: 5px;
+  }
+
+  .all-works{
+    background-color: rgba(0, 0, 0, 30%);
+  }
+
+}
