@@ -9,7 +9,7 @@ const WorkDetails = () => {
   useEffect(() => {
     const fetchWork = async () => {
       try {
-        const res = await axios.get("http://192.168.1.34:5000/api/getallworks");
+        const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/getallworks`);
         const foundWork = res.data.find((w) => w.id.toString() === id);
         setWork(foundWork);
       } catch (error) {
@@ -26,7 +26,7 @@ const WorkDetails = () => {
   return (
     <div>
       <img
-        src={`http://192.168.1.34:5000${work.fullImage}`}
+        src={`${import.meta.env.VITE_API_URL}${work.fullImage}`}
         alt={work.heading}
         style={{ width: "100%", display: "block" }}
       />
